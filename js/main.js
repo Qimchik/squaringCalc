@@ -5,11 +5,10 @@ function onclick(e){
 		return false;
 	}
 	if (e.target.innerHTML === '.') {
-	if (document.getElementById('monitor').innerHTML.indexOf('.')===-1) 
+	if (document.getElementById('monitor').innerHTML.indexOf('.') === -1) 
 		document.getElementById('monitor').innerHTML += '.';	
 		return false;
 	}
-	//console.log(document.getElementById('monitor') == '0');
 	if (document.getElementById('monitor').innerHTML == '0') 
 		document.getElementById('monitor').innerHTML = e.target.innerHTML;
 	else document.getElementById('monitor').innerHTML += e.target.innerHTML;
