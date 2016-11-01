@@ -1,0 +1,136 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+$width:20%;
+@media (max-width:480px) {
+    .conteiner {width: 250px;
+    	.monitor{
+    		height: 60px;
+    		span {
+    			line-height: 60px;
+    			font-size: 20px;
+    		}
+    	}
+    	.sqr{
+			margin: 10px auto;
+			font-size: 16px;
+		}
+    	.number{
+    		height: 40px;
+    		font-size: 20px;
+    	}
+    	.calculate{
+    		height: 208px;
+    	}
+    }   
+}
+@media (min-width:481px) and (max-width:800px){
+    .conteiner {width: 350px;
+    	.monitor{
+    		height: 75px;
+    		span {
+    			line-height: 75px;
+    			font-size: 25px;
+    		}
+    	}
+    	.sqr{
+			margin: 30px auto;
+			font-size: 20px;
+			font-weight: bold;
+		}
+    	.number{
+    		height: 40px;
+    		font-size: 25px;
+    	}
+    	.calculate{
+    		height: 208px;
+    	}
+    }
+}
+@media screen and (min-width:801px){
+    .conteiner {width: 600px;
+    	.monitor{
+    		height: 95px;
+    		span {
+    			line-height: 95px;
+    			font-size: 35px;
+    		}
+    	}
+    	.sqr{
+			margin: 50px auto;
+			font-size: 24px;
+			font-weight: bold;
+		}
+    	.number{
+    		height: 60px;
+    		font-size: 30px;
+    		font-weight: bold;
+    	}
+    	.calculate{
+    		height: 288px;
+    	}
+    }
+}
+
+body{
+	background: rgb(146,206,113);
+	font-family: Arial;
+}
+.conteiner{
+	height: auto;
+	background: rgb(242,242,242);
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	border-radius: 30px;
+	box-sizing: border-box;
+	.monitor{
+		background: black;
+		width: auto;
+		margin: 0 30px;
+		border-radius: 15px;
+		span{
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 30px;
+			text-align: right;
+			color: white;
+		}
+	}
+	.sqr{
+		display: block;
+		text-align: center;
+	}
+	.panel{
+		width: 100%;
+		padding: 0 30px;
+		box-sizing: border-box;
+		font-size: 0;
+		
+	}
+	.number{
+		margin-bottom: 25px;
+		width: $width;
+		margin: 8px 2.5%;
+	}
+	.number:hover{
+		color: rgb(146,206,113);
+		cursor: pointer;
+	}
+	.zero{
+		width: $width*2+5%;
+	}
+	.calculate{
+		width: $width;
+		margin: 8px 2.5%;
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+}
