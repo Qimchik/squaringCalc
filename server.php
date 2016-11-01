@@ -7,6 +7,7 @@ $server = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 socket_set_option($server, SOL_SOCKET, SO_REUSEADDR, 1);
 socket_bind($server, 0, $port);
 socket_listen($server);
+set_time_limit(0);
 $connection = array($server);
 
 $start = true;
@@ -116,3 +117,4 @@ function handshaking($receved_header,$newConnection, $host, $port)
 	"Sec-WebSocket-Accept:$secAccept\r\n\r\n";
 	socket_write($newConnection,$upgrade,strlen($upgrade));
 }
+?>

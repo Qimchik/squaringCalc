@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 12, ../sass/screen.scss */
   .conteiner .monitor span {
     line-height: 60px;
-    font-size: 20px;
+    font-size: 15px;
   }
   /* line 17, ../sass/screen.scss */
   .conteiner .sqr {
@@ -94,76 +94,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 25, ../sass/screen.scss */
   .conteiner .calculate {
     height: 208px;
+    font-size: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 31, ../sass/screen.scss */
+  /* line 32, ../sass/screen.scss */
   .conteiner {
     width: 350px;
   }
-  /* line 32, ../sass/screen.scss */
+  /* line 33, ../sass/screen.scss */
   .conteiner .monitor {
     height: 75px;
   }
-  /* line 34, ../sass/screen.scss */
+  /* line 35, ../sass/screen.scss */
   .conteiner .monitor span {
     line-height: 75px;
-    font-size: 25px;
+    font-size: 22px;
   }
-  /* line 39, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   .conteiner .sqr {
     margin: 30px auto;
     font-size: 20px;
     font-weight: bold;
   }
-  /* line 44, ../sass/screen.scss */
+  /* line 45, ../sass/screen.scss */
   .conteiner .number {
     height: 40px;
     font-size: 25px;
   }
-  /* line 48, ../sass/screen.scss */
+  /* line 49, ../sass/screen.scss */
   .conteiner .calculate {
     height: 208px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 801px) {
-  /* line 54, ../sass/screen.scss */
+  /* line 56, ../sass/screen.scss */
   .conteiner {
     width: 600px;
   }
-  /* line 55, ../sass/screen.scss */
+  /* line 57, ../sass/screen.scss */
   .conteiner .monitor {
     height: 95px;
+    padding: 0 45px;
   }
-  /* line 57, ../sass/screen.scss */
+  /* line 60, ../sass/screen.scss */
   .conteiner .monitor span {
     line-height: 95px;
-    font-size: 35px;
+    font-size: 40px;
   }
-  /* line 62, ../sass/screen.scss */
+  /* line 65, ../sass/screen.scss */
   .conteiner .sqr {
     margin: 50px auto;
     font-size: 24px;
     font-weight: bold;
   }
-  /* line 67, ../sass/screen.scss */
+  /* line 70, ../sass/screen.scss */
   .conteiner .number {
     height: 60px;
     font-size: 30px;
     font-weight: bold;
   }
-  /* line 72, ../sass/screen.scss */
+  /* line 75, ../sass/screen.scss */
   .conteiner .calculate {
     height: 288px;
+    font-size: 30px;
+    font-weight: bold;
   }
 }
-/* line 78, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body {
   background: #92ce71;
   font-family: Arial;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .conteiner {
   height: auto;
   background: #f2f2f2;
@@ -174,14 +179,14 @@ body {
   border-radius: 30px;
   box-sizing: border-box;
 }
-/* line 91, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .conteiner .monitor {
   background: black;
   width: auto;
   margin: 0 30px;
   border-radius: 15px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .conteiner .monitor span {
   display: block;
   width: 100%;
@@ -190,40 +195,45 @@ body {
   text-align: right;
   color: white;
 }
-/* line 105, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
+.conteiner .monitor .proc {
+  color: lime;
+}
+/* line 113, ../sass/screen.scss */
 .conteiner .sqr {
   display: block;
   text-align: center;
 }
-/* line 109, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .conteiner .panel {
   width: 100%;
   padding: 0 30px;
   box-sizing: border-box;
   font-size: 0;
 }
-/* line 116, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .conteiner .number {
   margin-bottom: 25px;
   width: 20%;
   margin: 8px 2.5%;
 }
-/* line 121, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .conteiner .number:hover {
   color: #92ce71;
   cursor: pointer;
 }
-/* line 125, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .conteiner .zero {
   width: 45%;
 }
-/* line 128, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .conteiner .calculate {
+  margin-bottom: 25px;
   width: 20%;
   margin: 8px 2.5%;
   float: right;
 }
-/* line 133, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .conteiner .clear {
   clear: both;
 }
