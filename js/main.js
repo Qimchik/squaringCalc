@@ -37,7 +37,6 @@ window.onload = function(){
 	}
 	socket.onmessage = function(e) {
 		var sqrNumber = JSON.parse(e.data);
-		console.log(sqrNumber);
 		document.getElementById('monitor').innerHTML = sqrNumber;
 		if (document.getElementById('monitor').innerHTML.length>15 ) 
 			document.getElementById('monitor').innerHTML = 'Too long';
