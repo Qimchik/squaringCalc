@@ -28,7 +28,7 @@ document.getElementById('panel').addEventListener('click', (function (e){
 
 window.onload = function(){
 	let url = "ws://localhost:8081"; 	
-	socket = new WebSocket(url); 
+	let socket = new WebSocket(url); 
 	socket.onopen = function() {
 		document.getElementById('calculate').disabled = false;
 		document.getElementById('monitor').classList.remove('proc');
