@@ -216,24 +216,25 @@ body {
   margin-bottom: 25px;
   width: 20%;
   margin: 8px 2.5%;
+  float: left;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .conteiner .number:hover {
   color: #92ce71;
   cursor: pointer;
 }
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .conteiner .zero {
   width: 45%;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .conteiner .calculate {
   margin-bottom: 25px;
   width: 20%;
   margin: 8px 2.5%;
   float: right;
 }
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .conteiner .clear {
   clear: both;
 }
